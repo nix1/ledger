@@ -7,7 +7,7 @@
 export PATH=$PATH:/opt/local/lib/openmpi/bin
 
 cat > ~/user-config.jam <<EOF
-using clang-darwin : : "/usr/local/bin/clang++" : <cxxflags>-std=c++11 <include>/usr/local/include ;
+using clang-darwin : : "/usr/local/bin/clang++" : <cxxflags>-std=c++17 <include>/usr/local/include ;
 EOF
 
 # jww (2012-04-24): This is still linking against /usr/lib/libc++.1.dylib
